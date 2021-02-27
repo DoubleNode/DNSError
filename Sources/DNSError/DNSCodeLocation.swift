@@ -19,6 +19,14 @@ public class CodeLocation {
     public var line: Int
     public var method: String
     public var failureReason: String { "\(domain):\(file):\(line):\(method)" }
+    public var userInfo: [String: Any] {
+        [
+            "DNSDomain": self.domain,
+            "DNSFile": self.file,
+            "DNSLine": self.line,
+            "DNSMethod": self.method,
+        ]
+    }
     
     public required init(_ object: Any,
                          _ rawData: String) {
