@@ -8,12 +8,14 @@
 
 import Foundation
 
-public class DNSCodeLocation: CodeLocation {
-    override public class var domainPreface: String { "com.doublenode." }
+open class DNSCodeLocation: CodeLocation {
+    override open class var domainPreface: String { "com.doublenode." }
 }
-public class CodeLocation {
-    public static var filenamePathRoots: [String] = []
-    public class var domainPreface: String { "" }
+open class CodeLocation {
+    static var filenamePathRoots: [String] = []
+
+    open class var domainPreface: String { "" }
+
     public var domain: String
     public var file: String
     public var line: Int
@@ -37,6 +39,9 @@ public class CodeLocation {
         method = (data.count > 2) ? data[2] : ""
     }
     
+    public class func addFilenamePathRoot(_ pathRoot: String) {
+        Self.filenamePathRoots.append(pathRoot)
+    }
     public class func shortenErrorPath(_ filename: String) -> String {
         var retval = filename
         Self.filenamePathRoots.forEach {
@@ -44,5 +49,4 @@ public class CodeLocation {
         }
         return retval
     }
-
 }
