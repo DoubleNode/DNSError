@@ -20,8 +20,8 @@ public class CodeLocation {
     public var method: String
     public var failureReason: String { "\(domain):\(file):\(line):\(method)" }
     
-    required init(_ object: Any,
-                  _ rawData: String) {
+    public required init(_ object: Any,
+                         _ rawData: String) {
         let data = rawData.components(separatedBy: ",")
         domain = Self.domainPreface + "\(type(of: object))"
         file = !data.isEmpty ? Self.shortenErrorPath(data[0]) : "<UnknownFile>"
