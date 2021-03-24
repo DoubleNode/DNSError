@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol DNSError: LocalizedError, Hashable {
+public protocol DNSError: LocalizedError {
     var nsError: NSError! { get }
 }
