@@ -16,6 +16,7 @@ open class CodeLocation {
 
     open class var domainPreface: String { "" }
 
+    public var timeStamp: Date = Date()
     public var domain: String
     public var file: String
     public var line: Int
@@ -23,6 +24,7 @@ open class CodeLocation {
     public var failureReason: String { "\(domain):\(file):\(line):\(method)" }
     public var userInfo: [String: Any] {
         [
+            "DNSTimeStamp": self.timeStamp,
             "DNSDomain": self.domain,
             "DNSFile": self.file,
             "DNSLine": self.line,
