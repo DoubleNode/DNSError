@@ -1,0 +1,4 @@
+framework module DNSError_macOS {
+  header "DNSError_macOS-Swift.h"
+  requires objc
+}
