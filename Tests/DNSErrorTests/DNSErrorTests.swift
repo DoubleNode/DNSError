@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import DNSError
+@testable import DNSErrorTarget
 
 class DNSErrorTests: XCTestCase {
     //    private var sut: DNSSemaphore!

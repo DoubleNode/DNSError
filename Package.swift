@@ -39,7 +39,8 @@ let package = Package(
             name: "DNSErrorWrapper",
             dependencies: [
                 "SwiftyBeaver",
-                .target(name: "DNSError", condition: .when(platforms: [.iOS])),
+                .target(name: "DNSError",
+                        condition: .when(platforms: [.iOS])),
             ],
             path: "Sources/DNSErrorWrapper"
         ),
@@ -49,7 +50,7 @@ let package = Package(
         ),
         .testTarget(
             name: "DNSErrorTests",
-            dependencies: ["DNSError"]
+            dependencies: ["DNSErrorTarget"]
         ),
     ]
 )
