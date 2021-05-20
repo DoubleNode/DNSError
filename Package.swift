@@ -20,7 +20,12 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            targets: ["DNSErrorWrapper"]),
+            targets: ["DNSErrorWrapper"]
+        ),
+        .library(
+            name: "DNSErrorWrapper",
+            targets: ["DNSErrorWrapper"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.5"),
