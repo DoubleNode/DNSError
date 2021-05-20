@@ -13,14 +13,12 @@
 		AD68B38A2655F00400E6D1A7 /* DNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEF2655967E008378B8 /* DNSError.swift */; };
 		AD68B38B2655F00400E6D1A7 /* DNSCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFED2655967E008378B8 /* DNSCodeLocation.swift */; };
 		AD68B38C2655F00400E6D1A7 /* DNSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEE2655967E008378B8 /* DNSLogger.swift */; };
-		AD68B38F2655F01A00E6D1A7 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = AD68B38E2655F01A00E6D1A7 /* SwiftyBeaver */; };
 		AD68B39E2655F06A00E6D1A7 /* DNSError_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */; };
 		AD68B3A32655F06A00E6D1A7 /* DNSError_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68B3A22655F06A00E6D1A7 /* DNSError_macOSTests.swift */; };
 		AD68B3A52655F06A00E6D1A7 /* DNSError_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AD68B3972655F06A00E6D1A7 /* DNSError_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD68B3AC2655F0D600E6D1A7 /* DNSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEE2655967E008378B8 /* DNSLogger.swift */; };
 		AD68B3AD2655F0D600E6D1A7 /* DNSCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFED2655967E008378B8 /* DNSCodeLocation.swift */; };
 		AD68B3AE2655F0D600E6D1A7 /* DNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEF2655967E008378B8 /* DNSError.swift */; };
-		AD68B3B02656038000E6D1A7 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = AD68B3AF2656038000E6D1A7 /* SwiftyBeaver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B38F2655F01A00E6D1A7 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B3B02656038000E6D1A7 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +199,6 @@
 			);
 			name = "DNSError-iOS";
 			packageProductDependencies = (
-				AD68B38E2655F01A00E6D1A7 /* SwiftyBeaver */,
 			);
 			productName = "DNSError-iOS";
 			productReference = AD68B3732655EFC600E6D1A7 /* DNSError_iOS.framework */;
@@ -242,7 +237,6 @@
 			);
 			name = "DNSError-macOS";
 			packageProductDependencies = (
-				AD68B3AF2656038000E6D1A7 /* SwiftyBeaver */,
 			);
 			productName = "DNSError-macOS";
 			productReference = AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */;
@@ -1071,19 +1065,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AD68B38E2655F01A00E6D1A7 /* SwiftyBeaver */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADC5AFFA265596E4008378B8 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
-			productName = SwiftyBeaver;
-		};
-		AD68B3AF2656038000E6D1A7 /* SwiftyBeaver */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADC5AFFA265596E4008378B8 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
-			productName = SwiftyBeaver;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADC5AF8F265594E8008378B8 /* Project object */;
 }
