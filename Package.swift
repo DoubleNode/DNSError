@@ -35,7 +35,7 @@ let package = Package(
                     "SwiftyBeaver",
                     .target(name: "DNSErrorFramework"),
                 ],
-                path: "Sources/DNSError"),
+                path: "Sources/DNSError2"),
         .testTarget(
             name: "DNSErrorTests",
             dependencies: ["DNSError"]),
