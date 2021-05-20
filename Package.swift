@@ -20,31 +20,32 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            type: .dynamic,
-            targets: ["DNSErrorWrapper"]
-        ),
-        .library(
-            name: "DNSErrorWrapper",
-            targets: ["DNSErrorWrapper"]
+//            type: .dynamic,
+            targets: ["DNSErrorTarget"]
         ),
     ],
     dependencies: [
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.5"),
     ],
     targets: [
-        .binaryTarget(
-            name: "DNSError",
-            path: "Archives/DNSError.xcframework"
+        .target(
+            name: "DNSErrorTarget",
+            dependencies: [
+                .target(name: "DNSErrorWrapper",
+                        condition: .when(platforms: [.iOS]))],
+            path: "Sources/DNSErrorTarget"
         ),
         .target(
             name: "DNSErrorWrapper",
             dependencies: [
-                "DNSError",
                 "SwiftyBeaver",
-//                .product(name: "SwiftyBeaver", package: "SwiftyBeaver", condition: .when(platforms: .some([.iOS]))),
-//                .target(name: "DNSError", condition: .when(platforms: .some([.iOS]))),
+                .target(name: "DNSError", condition: .when(platforms: [.iOS])),
             ],
             path: "Sources/DNSErrorWrapper"
+        ),
+        .binaryTarget(
+            name: "DNSError",
+            path: "Archives/DNSError.xcframework"
         ),
         .testTarget(
             name: "DNSErrorTests",
