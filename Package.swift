@@ -13,13 +13,14 @@ let package = Package(
     name: "DNSError",
     platforms: [
         .iOS(.v13),
-        .tvOS(.v13),
-        .macOS(.v10_15),
-        .watchOS(.v6),
+//        .tvOS(.v13),
+//        .macOS(.v10_15),
+//        .watchOS(.v6),
     ],
     products: [
         .library(
             name: "DNSError",
+            type: .dynamic,
             targets: ["DNSErrorWrapper"]
         ),
         .library(
@@ -38,8 +39,10 @@ let package = Package(
         .target(
             name: "DNSErrorWrapper",
             dependencies: [
+                "DNSError",
                 "SwiftyBeaver",
-                .target(name: "DNSError", condition: .when(platforms: .some([.iOS]))),
+//                .product(name: "SwiftyBeaver", package: "SwiftyBeaver", condition: .when(platforms: .some([.iOS]))),
+//                .target(name: "DNSError", condition: .when(platforms: .some([.iOS]))),
             ],
             path: "Sources/DNSErrorWrapper"
         ),
