@@ -4,6 +4,7 @@
 @_exported import DNSError_iOS
 import Foundation
 import Swift
+import SwiftyBeaver
 public protocol DNSError : Foundation.LocalizedError {
   var errorString: Swift.String { get }
   var nsError: Foundation.NSError! { get }
@@ -33,5 +34,16 @@ open class CodeLocation {
   required public init(_ object: Any, _ rawData: Swift.String)
   public class func addFilenamePathRoot(_ pathRoot: Swift.String)
   public class func shortenErrorPath(_ filename: Swift.String) -> Swift.String
+  @objc deinit
+}
+public let dnsLog: SwiftyBeaver.SwiftyBeaver.Type
+@_hasMissingDesignatedInitializers public class DNSLogger {
+  public static let shared: DNSError_iOS.DNSLogger
+  public var dnsLog: SwiftyBeaver.SwiftyBeaver.Type
+  public func addCloudDestination(appID: Swift.String, appSecret: Swift.String, encryptionKey: Swift.String) -> Swift.Bool
+  public func addConsoleDestination() -> Swift.Bool
+  public func cloudDestination() -> SwiftyBeaver.SBPlatformDestination?
+  public func consoleDestination() -> SwiftyBeaver.ConsoleDestination?
+  public func removeCloudDestination() -> Swift.Bool
   @objc deinit
 }
