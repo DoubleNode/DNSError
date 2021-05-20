@@ -5,7 +5,7 @@ xcodebuild archive -scheme DNSError-iOS -destination "generic/platform=iOS Simul
 
 xcodebuild archive -scheme DNSError-macOS -destination "generic/platform=macOS" -archivePath ./Archives/macOS/DNSError SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
-rm ./Archives/DNSError.xcframework
+rm -rf ./Archives/DNSError.xcframework
 xcodebuild -create-xcframework \
 -framework ./Archives/iOS/DNSError.xcarchive/Products/Library/Frameworks/DNSError_iOS.framework \
 -framework ./Archives/Simulator/DNSError.xcarchive/Products/Library/Frameworks/DNSError_iOS.framework \
