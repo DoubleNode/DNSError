@@ -21,7 +21,7 @@ let package = Package(
         .library(
             name: "DNSError",
             type: .dynamic,
-            targets: ["DNSErrorTarget", "DNSErrorWrapper", "DNSErrorBinary"]
+            targets: ["DNSErrorTarget", "DNSError"]
         ),
     ],
     dependencies: [
@@ -32,22 +32,12 @@ let package = Package(
             name: "DNSErrorTarget",
             dependencies: [
                 "SwiftyBeaver",
-                .target(name: "DNSErrorWrapper")
-//                        condition: .when(platforms: [.iOS]))
+                .target(name: "DNSError", condition: .when(platforms: [.iOS]))
             ],
             path: "Sources/DNSErrorTarget"
         ),
-        .target(
-            name: "DNSErrorWrapper",
-            dependencies: [
-                "SwiftyBeaver",
-                .target(name: "DNSErrorBinary")
-//                        condition: .when(platforms: [.iOS])),
-            ],
-            path: "Sources/DNSErrorWrapper"
-        ),
         .binaryTarget(
-            name: "DNSErrorBinary",
+            name: "DNSError",
             path: "Archives/DNSError.xcframework"
         ),
         .testTarget(
