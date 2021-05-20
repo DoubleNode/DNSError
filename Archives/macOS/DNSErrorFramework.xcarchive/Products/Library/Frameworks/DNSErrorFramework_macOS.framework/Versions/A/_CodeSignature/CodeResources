@@ -13,10 +13,6 @@
 	<dict>
 		<key>Headers/DNSErrorFramework_macOS-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DyGjzQjWQjRyh8dh6sc8Kj/Q+zU=
-			</data>
 			<key>hash2</key>
 			<data>
 			LzWszlhbkOKL8ZZgwy2F3f1+Sv+IOGHPKHT2coeRd8M=
@@ -24,10 +20,6 @@
 		</dict>
 		<key>Headers/DNSErrorFramework_macOS.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ID6jCeQ+f+By1bRxZ01N3Pnuefs=
-			</data>
 			<key>hash2</key>
 			<data>
 			N6LApXtVZMBtGkxUx5bNtQZHFweseiLKUvBXsiKpy+I=
@@ -35,10 +27,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CtghKjjqJop8uHEbuuQgz1OLyfU=
-			</data>
 			<key>hash2</key>
 			<data>
 			f8mLf3fFUjTmjxFkAnDxPO2sh04bTUuQUXBIgwWT2u0=
@@ -46,10 +34,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XiMEXwORRH/gv1HTnJW3JlZiQzE=
-			</data>
 			<key>hash2</key>
 			<data>
 			lWmqmkhanoWhw+oFEkRAXWhh/ejtSjzGF/7nTnUiArA=
@@ -57,10 +41,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eiz/zAKisUz6l6LgeKtE7Yp9f30=
-			</data>
 			<key>hash2</key>
 			<data>
 			C1/ISHrZB82Qcjyuk1CmIDvv69gv07urHr2WG+3djh0=
@@ -68,10 +48,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CtghKjjqJop8uHEbuuQgz1OLyfU=
-			</data>
 			<key>hash2</key>
 			<data>
 			f8mLf3fFUjTmjxFkAnDxPO2sh04bTUuQUXBIgwWT2u0=
@@ -79,10 +55,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XiMEXwORRH/gv1HTnJW3JlZiQzE=
-			</data>
 			<key>hash2</key>
 			<data>
 			lWmqmkhanoWhw+oFEkRAXWhh/ejtSjzGF/7nTnUiArA=
@@ -90,10 +62,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eiz/zAKisUz6l6LgeKtE7Yp9f30=
-			</data>
 			<key>hash2</key>
 			<data>
 			C1/ISHrZB82Qcjyuk1CmIDvv69gv07urHr2WG+3djh0=
@@ -101,10 +69,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			It2nvXDA8iKWIG6BQWrkcjF8hF0=
-			</data>
 			<key>hash2</key>
 			<data>
 			5To0FmQLp8JErmOh9Z9J9J0lpUv5/h+j19thqOZp8ks=
@@ -112,10 +76,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vNLLjdUJR/D+TwJ01P5FJ+Zz7Zc=
-			</data>
 			<key>hash2</key>
 			<data>
 			NSXtMjDmQyIO3o7V/t9snwVuRE86vUy+ea2DjmqRi1o=
@@ -123,10 +83,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			24zPXgbzm1wLZMSEbnCUKlnIpp4=
-			</data>
 			<key>hash2</key>
 			<data>
 			2DyOi/9OyN+K7NdzdQtAjReHGAf/d3UmvHVI4zh8Bzg=
@@ -134,10 +90,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			It2nvXDA8iKWIG6BQWrkcjF8hF0=
-			</data>
 			<key>hash2</key>
 			<data>
 			5To0FmQLp8JErmOh9Z9J9J0lpUv5/h+j19thqOZp8ks=
@@ -145,10 +97,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vNLLjdUJR/D+TwJ01P5FJ+Zz7Zc=
-			</data>
 			<key>hash2</key>
 			<data>
 			NSXtMjDmQyIO3o7V/t9snwVuRE86vUy+ea2DjmqRi1o=
@@ -156,10 +104,6 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			24zPXgbzm1wLZMSEbnCUKlnIpp4=
-			</data>
 			<key>hash2</key>
 			<data>
 			2DyOi/9OyN+K7NdzdQtAjReHGAf/d3UmvHVI4zh8Bzg=
@@ -167,10 +111,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BH4jH8GcwkYUXvT8rbEpCxlH3lc=
-			</data>
 			<key>hash2</key>
 			<data>
 			mDYwVtJg//5saSzveY9lDIL3xjtHNDZPTzus+HZRZUs=
@@ -178,10 +118,6 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fLzLDCdz6DpxRa8QytxrdXgGl9k=
-			</data>
 			<key>hash2</key>
 			<data>
 			6N5WRTB/21na39QJp/JEQzJQyP+m3ccXZtuqHn8pgi4=
