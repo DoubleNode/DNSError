@@ -20,7 +20,7 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            type: .dynamic,
+            type: .static,
             targets: ["DNSErrorTarget"]
         ),
     ],
