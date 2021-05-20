@@ -20,24 +20,26 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            targets: ["DNSErrorDep"]),
+            type: .static,
+            targets: ["DNSErrorWrapper"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.5"),
     ],
     targets: [
         .binaryTarget(
             name: "DNSError",
-            path: "Archives/DNSError.xcframework"),
-        .target(name: "DNSErrorDep",
+            path: "Archives/DNSError.xcframework"
+        ),
+        .target(name: "DNSErrorWrapper",
                 dependencies: [
                     "SwiftyBeaver",
-                    .target(name: "DNSError", condition: .when(platforms: .some([.iOS]))),
-                ],
-                path: "Sources/DNSError2"),
+                    .target(name: "DNSError"),  //, condition: .when(platforms: .some([.iOS]))),
+                ]
+        ),
         .testTarget(
             name: "DNSErrorTests",
-            dependencies: ["DNSError"]),
+            dependencies: ["DNSError"]
+        ),
     ]
 )
