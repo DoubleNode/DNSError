@@ -20,7 +20,7 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            targets: ["DNSError"]),
+            targets: ["DNSErrorDep"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -28,12 +28,12 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "DNSErrorFramework",
+            name: "DNSError",
             path: "Archives/DNSError.xcframework"),
-        .target(name: "DNSError",
+        .target(name: "DNSErrorDep",
                 dependencies: [
                     "SwiftyBeaver",
-                    .target(name: "DNSErrorFramework"),
+                    .target(name: "DNSError"),
                 ],
                 path: "Sources/DNSError2"),
         .testTarget(
