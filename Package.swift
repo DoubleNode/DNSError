@@ -46,7 +46,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DNSError",
-            path: "Archives/DNSError.xcframework"
+            path: "Archives/DNSErrorFramework.xcframework"
         ),
         .testTarget(
             name: "DNSErrorTests",
