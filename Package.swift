@@ -23,7 +23,7 @@ let package = Package(
             targets: ["DNSErrorWrapper"]),
     ],
     dependencies: [
-//        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.5"),
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.5"),
     ],
     targets: [
         .binaryTarget(
@@ -33,7 +33,7 @@ let package = Package(
         .target(
             name: "DNSErrorWrapper",
             dependencies: [
-//                "SwiftyBeaver",
+                "SwiftyBeaver",
                 .target(name: "DNSError", condition: .when(platforms: .some([.iOS]))),
             ]
         ),
