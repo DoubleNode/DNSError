@@ -73,6 +73,10 @@
 	<dict>
 		<key>Headers/DNSErrorFramework_iOS-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hUnjlYuxVELUgnV0hmnbTnAVbtQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			vTbALE6E6g135YqDvygQg4pw8C2KKbE1McjEs18KfSw=
@@ -80,6 +84,10 @@
 		</dict>
 		<key>Headers/DNSErrorFramework_iOS.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			a6+iLkjau7Q33kfwmqS2R5P8DKw=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZCJCVByuGtkX4o9nEIHqpgoeZsnJqf+B1NgfaUv9Fvs=
@@ -87,6 +95,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LSUYUSO9wYenhEbHJWhiKw+teng=
+			</data>
 			<key>hash2</key>
 			<data>
 			BNX4jyI739tguKjA3HGmHP4fgTzCPynB6Prg2qZF8SQ=
@@ -94,6 +106,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fGnz7K7+jonqIdvySOsDYOT4TYo=
+			</data>
 			<key>hash2</key>
 			<data>
 			zMRdixwIsxLI2/OH9I3y10GxbWJHYtQvnnWQIbmX0l8=
@@ -101,6 +117,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i/52WMks3xmdjfZccbx8NCVdGKw=
+			</data>
 			<key>hash2</key>
 			<data>
 			C6x9DDTAFBaSrKNH86aKMgKD8cL8sYoRGglmjcq5o/o=
@@ -108,6 +128,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LSUYUSO9wYenhEbHJWhiKw+teng=
+			</data>
 			<key>hash2</key>
 			<data>
 			BNX4jyI739tguKjA3HGmHP4fgTzCPynB6Prg2qZF8SQ=
@@ -115,6 +139,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fGnz7K7+jonqIdvySOsDYOT4TYo=
+			</data>
 			<key>hash2</key>
 			<data>
 			zMRdixwIsxLI2/OH9I3y10GxbWJHYtQvnnWQIbmX0l8=
@@ -122,6 +150,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i/52WMks3xmdjfZccbx8NCVdGKw=
+			</data>
 			<key>hash2</key>
 			<data>
 			C6x9DDTAFBaSrKNH86aKMgKD8cL8sYoRGglmjcq5o/o=
@@ -129,6 +161,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IMwZECw9z1wY5u2At35+Vixheow=
+			</data>
 			<key>hash2</key>
 			<data>
 			mENM1Qf5MkXFlAwVIJAdNyYBEeWss6bxD4Mjxzz8QT0=
@@ -136,6 +172,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hINr2rBWqweZV7dDL5wraSPro3g=
+			</data>
 			<key>hash2</key>
 			<data>
 			d/WIso8BNxfzvLynSjakIezB6kVWhiYNSZ9aEMI8T58=
@@ -143,6 +183,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			k2MlX5bynl+HCmwPikcq27SUhiM=
+			</data>
 			<key>hash2</key>
 			<data>
 			bC6HZEbe9C5ragpbHcfyd/wEk2HdS+RgGiujOcxVH8Y=
@@ -150,6 +194,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IMwZECw9z1wY5u2At35+Vixheow=
+			</data>
 			<key>hash2</key>
 			<data>
 			mENM1Qf5MkXFlAwVIJAdNyYBEeWss6bxD4Mjxzz8QT0=
@@ -157,6 +205,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hINr2rBWqweZV7dDL5wraSPro3g=
+			</data>
 			<key>hash2</key>
 			<data>
 			d/WIso8BNxfzvLynSjakIezB6kVWhiYNSZ9aEMI8T58=
@@ -164,6 +216,10 @@
 		</dict>
 		<key>Modules/DNSErrorFramework_iOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			k2MlX5bynl+HCmwPikcq27SUhiM=
+			</data>
 			<key>hash2</key>
 			<data>
 			bC6HZEbe9C5ragpbHcfyd/wEk2HdS+RgGiujOcxVH8Y=
@@ -171,6 +227,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hCa4shItJgTK18bcRq/dsEzQkVg=
+			</data>
 			<key>hash2</key>
 			<data>
 			rwRFWeDPCFvWVcUOaGm/lURuNzJIAhsanEo2oroCmcA=

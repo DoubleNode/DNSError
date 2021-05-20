@@ -20,7 +20,6 @@ let package = Package(
     products: [
         .library(
             name: "DNSError",
-            type: .static,
             targets: ["DNSErrorTarget"]
         ),
     ],
@@ -31,6 +30,7 @@ let package = Package(
         .target(
             name: "DNSErrorTarget",
             dependencies: [
+                "SwiftyBeaver",
                 .target(name: "DNSErrorWrapper",
                         condition: .when(platforms: [.iOS]))],
             path: "Sources/DNSErrorTarget"
