@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD68B37C2655EFC600E6D1A7 /* DNSError_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD68B3732655EFC600E6D1A7 /* DNSError_iOS.framework */; };
-		AD68B3812655EFC600E6D1A7 /* DNSError_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68B3802655EFC600E6D1A7 /* DNSError_iOSTests.swift */; };
-		AD68B3832655EFC600E6D1A7 /* DNSError_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AD68B3752655EFC600E6D1A7 /* DNSError_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD68B3812655EFC600E6D1A7 /* DNSErrorFramework_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68B3802655EFC600E6D1A7 /* DNSErrorFramework_iOSTests.swift */; };
+		AD68B3832655EFC600E6D1A7 /* DNSErrorFramework_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AD68B3752655EFC600E6D1A7 /* DNSErrorFramework_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD68B38A2655F00400E6D1A7 /* DNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEF2655967E008378B8 /* DNSError.swift */; };
 		AD68B38B2655F00400E6D1A7 /* DNSCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFED2655967E008378B8 /* DNSCodeLocation.swift */; };
 		AD68B38C2655F00400E6D1A7 /* DNSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEE2655967E008378B8 /* DNSLogger.swift */; };
-		AD68B39E2655F06A00E6D1A7 /* DNSError_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */; };
-		AD68B3A32655F06A00E6D1A7 /* DNSError_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68B3A22655F06A00E6D1A7 /* DNSError_macOSTests.swift */; };
-		AD68B3A52655F06A00E6D1A7 /* DNSError_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AD68B3972655F06A00E6D1A7 /* DNSError_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD68B3A32655F06A00E6D1A7 /* DNSErrorFramework_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68B3A22655F06A00E6D1A7 /* DNSErrorFramework_macOSTests.swift */; };
+		AD68B3A52655F06A00E6D1A7 /* DNSErrorFramework_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AD68B3972655F06A00E6D1A7 /* DNSErrorFramework_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD68B3AC2655F0D600E6D1A7 /* DNSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEE2655967E008378B8 /* DNSLogger.swift */; };
 		AD68B3AD2655F0D600E6D1A7 /* DNSCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFED2655967E008378B8 /* DNSCodeLocation.swift */; };
 		AD68B3AE2655F0D600E6D1A7 /* DNSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5AFEF2655967E008378B8 /* DNSError.swift */; };
@@ -41,19 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD68B3732655EFC600E6D1A7 /* DNSError_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSError_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD68B3752655EFC600E6D1A7 /* DNSError_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSError_iOS.h; sourceTree = "<group>"; };
+		AD68B3752655EFC600E6D1A7 /* DNSErrorFramework_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSErrorFramework_iOS.h; sourceTree = "<group>"; };
 		AD68B3762655EFC600E6D1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD68B37B2655EFC600E6D1A7 /* DNSError-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNSError-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD68B3802655EFC600E6D1A7 /* DNSError_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSError_iOSTests.swift; sourceTree = "<group>"; };
+		AD68B37B2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DNSErrorFramework-iOSTests.xctest"; path = "/Users/darren.ehlers/Development/DNSFramework/DNSError/DNSError/build/Debug-iphoneos/DNSErrorFramework-iOSTests.xctest"; sourceTree = "<absolute>"; };
+		AD68B3802655EFC600E6D1A7 /* DNSErrorFramework_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSErrorFramework_iOSTests.swift; sourceTree = "<group>"; };
 		AD68B3822655EFC600E6D1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSError_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD68B3972655F06A00E6D1A7 /* DNSError_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSError_macOS.h; sourceTree = "<group>"; };
+		AD68B3972655F06A00E6D1A7 /* DNSErrorFramework_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSErrorFramework_macOS.h; sourceTree = "<group>"; };
 		AD68B3982655F06A00E6D1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD68B39D2655F06A00E6D1A7 /* DNSError-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNSError-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD68B3A22655F06A00E6D1A7 /* DNSError_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSError_macOSTests.swift; sourceTree = "<group>"; };
+		AD68B39D2655F06A00E6D1A7 /* DNSErrorFramework-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DNSErrorFramework-macOSTests.xctest"; path = "/Users/darren.ehlers/Development/DNSFramework/DNSError/DNSError/build/Debug/DNSErrorFramework-macOSTests.xctest"; sourceTree = "<absolute>"; };
+		AD68B3A22655F06A00E6D1A7 /* DNSErrorFramework_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSErrorFramework_macOSTests.swift; sourceTree = "<group>"; };
 		AD68B3A42655F06A00E6D1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD68B3B1265604FE00E6D1A7 /* buildFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = buildFramework.sh; path = ../buildFramework.sh; sourceTree = "<group>"; };
+		AD68B3D02656E6FD00E6D1A7 /* DNSErrorFramework_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSErrorFramework_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD68B3D12656E70A00E6D1A7 /* DNSErrorFramework_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSErrorFramework_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC5AFED2655967E008378B8 /* DNSCodeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSCodeLocation.swift; sourceTree = "<group>"; };
 		ADC5AFEE2655967E008378B8 /* DNSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSLogger.swift; sourceTree = "<group>"; };
 		ADC5AFEF2655967E008378B8 /* DNSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSError.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B37C2655EFC600E6D1A7 /* DNSError_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,29 +85,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B39E2655F06A00E6D1A7 /* DNSError_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD68B3742655EFC600E6D1A7 /* DNSError-iOS */ = {
+		AD68B3742655EFC600E6D1A7 /* DNSErrorFramework-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD68B3752655EFC600E6D1A7 /* DNSError_iOS.h */,
+				AD68B3752655EFC600E6D1A7 /* DNSErrorFramework_iOS.h */,
 				AD68B3762655EFC600E6D1A7 /* Info.plist */,
 			);
-			path = "DNSError-iOS";
+			path = "DNSErrorFramework-iOS";
 			sourceTree = "<group>";
 		};
-		AD68B37F2655EFC600E6D1A7 /* DNSError-iOSTests */ = {
+		AD68B37F2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD68B3802655EFC600E6D1A7 /* DNSError_iOSTests.swift */,
+				AD68B3802655EFC600E6D1A7 /* DNSErrorFramework_iOSTests.swift */,
 				AD68B3822655EFC600E6D1A7 /* Info.plist */,
 			);
-			path = "DNSError-iOSTests";
+			path = "DNSErrorFramework-iOSTests";
 			sourceTree = "<group>";
 		};
 		AD68B38D2655F01A00E6D1A7 /* Frameworks */ = {
@@ -120,22 +116,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AD68B3962655F06A00E6D1A7 /* DNSError-macOS */ = {
+		AD68B3962655F06A00E6D1A7 /* DNSErrorFramework-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD68B3972655F06A00E6D1A7 /* DNSError_macOS.h */,
+				AD68B3972655F06A00E6D1A7 /* DNSErrorFramework_macOS.h */,
 				AD68B3982655F06A00E6D1A7 /* Info.plist */,
 			);
-			path = "DNSError-macOS";
+			path = "DNSErrorFramework-macOS";
 			sourceTree = "<group>";
 		};
-		AD68B3A12655F06A00E6D1A7 /* DNSError-macOSTests */ = {
+		AD68B3A12655F06A00E6D1A7 /* DNSErrorFramework-macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD68B3A22655F06A00E6D1A7 /* DNSError_macOSTests.swift */,
+				AD68B3A22655F06A00E6D1A7 /* DNSErrorFramework_macOSTests.swift */,
 				AD68B3A42655F06A00E6D1A7 /* Info.plist */,
 			);
-			path = "DNSError-macOSTests";
+			path = "DNSErrorFramework-macOSTests";
 			sourceTree = "<group>";
 		};
 		ADC5AF8E265594E8008378B8 = {
@@ -143,15 +139,13 @@
 			children = (
 				AD68B3B1265604FE00E6D1A7 /* buildFramework.sh */,
 				ADC5AFEC2655967E008378B8 /* DNSErrorSource */,
-				AD68B3742655EFC600E6D1A7 /* DNSError-iOS */,
-				AD68B3732655EFC600E6D1A7 /* DNSError_iOS.framework */,
-				AD68B3962655F06A00E6D1A7 /* DNSError-macOS */,
-				AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */,
-				AD68B37F2655EFC600E6D1A7 /* DNSError-iOSTests */,
-				AD68B37B2655EFC600E6D1A7 /* DNSError-iOSTests.xctest */,
-				AD68B3A12655F06A00E6D1A7 /* DNSError-macOSTests */,
-				AD68B39D2655F06A00E6D1A7 /* DNSError-macOSTests.xctest */,
+				AD68B3742655EFC600E6D1A7 /* DNSErrorFramework-iOS */,
+				AD68B3962655F06A00E6D1A7 /* DNSErrorFramework-macOS */,
+				AD68B37F2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests */,
+				AD68B3A12655F06A00E6D1A7 /* DNSErrorFramework-macOSTests */,
 				AD68B38D2655F01A00E6D1A7 /* Frameworks */,
+				AD68B3D02656E6FD00E6D1A7 /* DNSErrorFramework_iOS.framework */,
+				AD68B3D12656E70A00E6D1A7 /* DNSErrorFramework_macOS.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,7 +167,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B3832655EFC600E6D1A7 /* DNSError_iOS.h in Headers */,
+				AD68B3832655EFC600E6D1A7 /* DNSErrorFramework_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,16 +175,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B3A52655F06A00E6D1A7 /* DNSError_macOS.h in Headers */,
+				AD68B3A52655F06A00E6D1A7 /* DNSErrorFramework_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AD68B3722655EFC600E6D1A7 /* DNSError-iOS */ = {
+		AD68B3722655EFC600E6D1A7 /* DNSErrorFramework-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD68B3842655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-iOS" */;
+			buildConfigurationList = AD68B3842655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-iOS" */;
 			buildPhases = (
 				AD68B36E2655EFC600E6D1A7 /* Headers */,
 				AD68B36F2655EFC600E6D1A7 /* Sources */,
@@ -201,17 +195,17 @@
 			);
 			dependencies = (
 			);
-			name = "DNSError-iOS";
+			name = "DNSErrorFramework-iOS";
 			packageProductDependencies = (
 				AD68B3B22656BB5400E6D1A7 /* SwiftyBeaver */,
 			);
 			productName = "DNSError-iOS";
-			productReference = AD68B3732655EFC600E6D1A7 /* DNSError_iOS.framework */;
+			productReference = AD68B3D02656E6FD00E6D1A7 /* DNSErrorFramework_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD68B37A2655EFC600E6D1A7 /* DNSError-iOSTests */ = {
+		AD68B37A2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD68B3872655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-iOSTests" */;
+			buildConfigurationList = AD68B3872655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-iOSTests" */;
 			buildPhases = (
 				AD68B3772655EFC600E6D1A7 /* Sources */,
 				AD68B3782655EFC600E6D1A7 /* Frameworks */,
@@ -222,14 +216,14 @@
 			dependencies = (
 				AD68B37E2655EFC600E6D1A7 /* PBXTargetDependency */,
 			);
-			name = "DNSError-iOSTests";
+			name = "DNSErrorFramework-iOSTests";
 			productName = "DNSError-iOSTests";
-			productReference = AD68B37B2655EFC600E6D1A7 /* DNSError-iOSTests.xctest */;
+			productReference = AD68B37B2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AD68B3942655F06A00E6D1A7 /* DNSError-macOS */ = {
+		AD68B3942655F06A00E6D1A7 /* DNSErrorFramework-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD68B3A62655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-macOS" */;
+			buildConfigurationList = AD68B3A62655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-macOS" */;
 			buildPhases = (
 				AD68B3902655F06A00E6D1A7 /* Headers */,
 				AD68B3912655F06A00E6D1A7 /* Sources */,
@@ -240,17 +234,17 @@
 			);
 			dependencies = (
 			);
-			name = "DNSError-macOS";
+			name = "DNSErrorFramework-macOS";
 			packageProductDependencies = (
 				AD68B3B42656BB5900E6D1A7 /* SwiftyBeaver */,
 			);
 			productName = "DNSError-macOS";
-			productReference = AD68B3952655F06A00E6D1A7 /* DNSError_macOS.framework */;
+			productReference = AD68B3D12656E70A00E6D1A7 /* DNSErrorFramework_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AD68B39C2655F06A00E6D1A7 /* DNSError-macOSTests */ = {
+		AD68B39C2655F06A00E6D1A7 /* DNSErrorFramework-macOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD68B3A92655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-macOSTests" */;
+			buildConfigurationList = AD68B3A92655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-macOSTests" */;
 			buildPhases = (
 				AD68B3992655F06A00E6D1A7 /* Sources */,
 				AD68B39A2655F06A00E6D1A7 /* Frameworks */,
@@ -261,9 +255,9 @@
 			dependencies = (
 				AD68B3A02655F06A00E6D1A7 /* PBXTargetDependency */,
 			);
-			name = "DNSError-macOSTests";
+			name = "DNSErrorFramework-macOSTests";
 			productName = "DNSError-macOSTests";
-			productReference = AD68B39D2655F06A00E6D1A7 /* DNSError-macOSTests.xctest */;
+			productReference = AD68B39D2655F06A00E6D1A7 /* DNSErrorFramework-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -305,10 +299,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD68B3722655EFC600E6D1A7 /* DNSError-iOS */,
-				AD68B37A2655EFC600E6D1A7 /* DNSError-iOSTests */,
-				AD68B3942655F06A00E6D1A7 /* DNSError-macOS */,
-				AD68B39C2655F06A00E6D1A7 /* DNSError-macOSTests */,
+				AD68B3722655EFC600E6D1A7 /* DNSErrorFramework-iOS */,
+				AD68B37A2655EFC600E6D1A7 /* DNSErrorFramework-iOSTests */,
+				AD68B3942655F06A00E6D1A7 /* DNSErrorFramework-macOS */,
+				AD68B39C2655F06A00E6D1A7 /* DNSErrorFramework-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B3812655EFC600E6D1A7 /* DNSError_iOSTests.swift in Sources */,
+				AD68B3812655EFC600E6D1A7 /* DNSErrorFramework_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD68B3A32655F06A00E6D1A7 /* DNSError_macOSTests.swift in Sources */,
+				AD68B3A32655F06A00E6D1A7 /* DNSErrorFramework_macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,12 +380,12 @@
 /* Begin PBXTargetDependency section */
 		AD68B37E2655EFC600E6D1A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD68B3722655EFC600E6D1A7 /* DNSError-iOS */;
+			target = AD68B3722655EFC600E6D1A7 /* DNSErrorFramework-iOS */;
 			targetProxy = AD68B37D2655EFC600E6D1A7 /* PBXContainerItemProxy */;
 		};
 		AD68B3A02655F06A00E6D1A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD68B3942655F06A00E6D1A7 /* DNSError-macOS */;
+			target = AD68B3942655F06A00E6D1A7 /* DNSErrorFramework-macOS */;
 			targetProxy = AD68B39F2655F06A00E6D1A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -456,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DNSError-iOS/Info.plist";
+				INFOPLIST_FILE = "DNSErrorFramework-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,7 +461,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSError-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSErrorFramework-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -533,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DNSError-iOS/Info.plist";
+				INFOPLIST_FILE = "DNSErrorFramework-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,7 +537,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSError-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSErrorFramework-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -759,7 +753,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DNSError-macOS/Info.plist";
+				INFOPLIST_FILE = "DNSErrorFramework-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -769,7 +763,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSError-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSErrorFramework-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -835,7 +829,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "DNSError-macOS/Info.plist";
+				INFOPLIST_FILE = "DNSErrorFramework-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -844,7 +838,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSError-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doublenode.DNSErrorFramework-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -998,6 +992,7 @@
 		ADC5AF93265594E8008378B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 			};
@@ -1006,6 +1001,7 @@
 		ADC5AF94265594E8008378B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 			};
@@ -1014,7 +1010,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD68B3842655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-iOS" */ = {
+		AD68B3842655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD68B3852655EFC600E6D1A7 /* Debug */,
@@ -1023,7 +1019,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD68B3872655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-iOSTests" */ = {
+		AD68B3872655EFC600E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD68B3882655EFC600E6D1A7 /* Debug */,
@@ -1032,7 +1028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD68B3A62655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-macOS" */ = {
+		AD68B3A62655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD68B3A72655F06A00E6D1A7 /* Debug */,
@@ -1041,7 +1037,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD68B3A92655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSError-macOSTests" */ = {
+		AD68B3A92655F06A00E6D1A7 /* Build configuration list for PBXNativeTarget "DNSErrorFramework-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD68B3AA2655F06A00E6D1A7 /* Debug */,
