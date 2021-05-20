@@ -1,9 +1,14 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DNSError_iOS
+@_exported import DNSError_iOS
 import Foundation
 import Swift
 import SwiftyBeaver
+public protocol DNSError : Foundation.LocalizedError {
+  var errorString: Swift.String { get }
+  var nsError: Foundation.NSError! { get }
+}
 @_inheritsConvenienceInitializers open class DNSCodeLocation : DNSError_iOS.CodeLocation {
   override open class var domainPreface: Swift.String {
     get
@@ -41,8 +46,4 @@ public let dnsLog: SwiftyBeaver.SwiftyBeaver.Type
   public func consoleDestination() -> SwiftyBeaver.ConsoleDestination?
   public func removeCloudDestination() -> Swift.Bool
   @objc deinit
-}
-public protocol DNSError : Foundation.LocalizedError {
-  var errorString: Swift.String { get }
-  var nsError: Foundation.NSError! { get }
 }

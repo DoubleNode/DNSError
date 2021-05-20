@@ -1,4 +1,11 @@
 framework module DNSError_iOS {
-  header "DNSError_iOS-Swift.h"
-  requires objc
+  umbrella header "DNSError_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module DNSError_iOS.Swift {
+    header "DNSError_iOS-Swift.h"
+    requires objc
 }

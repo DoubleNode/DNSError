@@ -4,17 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/DNSError.h</key>
-		<data>
-		QQh1cb8V9NECk7LzZ6M81fb027o=
-		</data>
 		<key>Headers/DNSError_iOS-Swift.h</key>
 		<data>
 		3RNjctf9T6etSrk62ydmUbxxgOU=
 		</data>
+		<key>Headers/DNSError_iOS.h</key>
+		<data>
+		QgKpd8/exYSxvXofF+1X2ml/g6U=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		gQ9afuW3je9VAM1bBFMszuQV7Z0=
+		NnQKtoZQVdpVMb8gn84X33QagA8=
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tQ0dzqPKZY2/okBw2V1AVoaVjaA=
+		uRjHMS0mIRcVO42f9X136WS3Gao=
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SLhurofuqjgVCwpTyS7AZHXFayc=
+		m0Aj8lMJO5nRf6wD5KXqEOjTIU4=
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,26 +34,19 @@
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		tQ0dzqPKZY2/okBw2V1AVoaVjaA=
+		uRjHMS0mIRcVO42f9X136WS3Gao=
 		</data>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		SLhurofuqjgVCwpTyS7AZHXFayc=
+		m0Aj8lMJO5nRf6wD5KXqEOjTIU4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		EJhTKmoKMbtmTgt1ozKxLO7NVIo=
+		ubLWGzhttN+jSoP/mzIiHghuvG4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/DNSError.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P/T7YufqKZp7gQ2FvXB0PEX7tezoiVqLYrQkI34sV8c=
-			</data>
-		</dict>
 		<key>Headers/DNSError_iOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -61,6 +54,13 @@
 			NysbtAJ2L+/sVsHXxZRvgCqkG+dF5IT6QQZPaJ3z8R8=
 			</data>
 		</dict>
+		<key>Headers/DNSError_iOS.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ohJ8xafirrPXJNOn4kp/Qbx+scE/cPqTa0gBTAdcrb8=
+			</data>
+		</dict>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcZanHXw01NxcKaQkkgFcexJTu6ca2wLfzjkAr40KNA=
+			JRNDl4LvzCQPloQ2bCBN8xJjjU8e1CCLQrMUt9zSVlI=
 			</data>
 		</dict>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8a1WndsMwnUAtcMBTTbikae0ACuHbXSfpUi+JPrn0E=
+			twcz7iFf2TiPkwj+mG+9A2f+8FZuv5ISVBnriOlRNlE=
 			</data>
 		</dict>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64.swiftdoc</key>
@@ -93,21 +93,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcZanHXw01NxcKaQkkgFcexJTu6ca2wLfzjkAr40KNA=
+			JRNDl4LvzCQPloQ2bCBN8xJjjU8e1CCLQrMUt9zSVlI=
 			</data>
 		</dict>
 		<key>Modules/DNSError_iOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8a1WndsMwnUAtcMBTTbikae0ACuHbXSfpUi+JPrn0E=
+			twcz7iFf2TiPkwj+mG+9A2f+8FZuv5ISVBnriOlRNlE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AquwlK4Lvnu/ucy59tAF7ChDk2dIoo4rCphKQ/YITFc=
+			8r3nmPyh/uEGzJdcnZ/zVvnG45BVbP5QPsdhfCyfTmM=
 			</data>
 		</dict>
 	</dict>

@@ -6,23 +6,23 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		Q/hdr45vVwsjtsbIhGuP8IHDJYQ=
+		KgucmE31jiI6ttvShLBig8z7cz4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/DNSError.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bz+gms4voEP3tTscjYqVLTCRhIEkobEDVrZ7wdZa0G8=
-			</data>
-		</dict>
 		<key>Headers/DNSError_macOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			UT1pPfgqG7Em+gR4lYuL2Tb5YOVckiZQilHY9MCDDMM=
+			</data>
+		</dict>
+		<key>Headers/DNSError_macOS.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/9duNjHwRNrrnta+7X9Bb6YMzGxqz6SAhi86RgHy3pQ=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -36,14 +36,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OWHUjlPLBjvwKSlz9NZKfORHlB03cMws6GwBvDQuuQw=
+			t7Oplb/KdIy/pHC2IJEl5yIdWL1MZp8hHA9X2dD7DxA=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d8J09zOu/5WWB9t+Uw/JW/vnTebZmSQwy6J9gMbIdLA=
+			ztN7PEnrb5IousPKA3YuKaQ+n9p6nrk9P9Zwcfi62ik=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/arm64.swiftdoc</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OWHUjlPLBjvwKSlz9NZKfORHlB03cMws6GwBvDQuuQw=
+			t7Oplb/KdIy/pHC2IJEl5yIdWL1MZp8hHA9X2dD7DxA=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d8J09zOu/5WWB9t+Uw/JW/vnTebZmSQwy6J9gMbIdLA=
+			ztN7PEnrb5IousPKA3YuKaQ+n9p6nrk9P9Zwcfi62ik=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvuf6Gup3GmyyFUY4ZFtRRbMt76IQD77tv0YhaeCS5A=
+			fYrqJg/+EHLDPwRkpt6N6m3qpcGPjtIsnwOneDqsAMc=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vC+DOxTiBfZs8l6J3DEkxIDioHAFsOdRgLV9stOdVzY=
+			pHoldyv0Pnm1460nRSpxKMRCj94f2AjfDYSJ+uW4+f0=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/x86_64.swiftdoc</key>
@@ -99,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvuf6Gup3GmyyFUY4ZFtRRbMt76IQD77tv0YhaeCS5A=
+			fYrqJg/+EHLDPwRkpt6N6m3qpcGPjtIsnwOneDqsAMc=
 			</data>
 		</dict>
 		<key>Modules/DNSError_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vC+DOxTiBfZs8l6J3DEkxIDioHAFsOdRgLV9stOdVzY=
+			pHoldyv0Pnm1460nRSpxKMRCj94f2AjfDYSJ+uW4+f0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B7IWe1F06P/ibc1TrtNUDwgT5NtSlFohM2EOQF0+Ysw=
+			G8kx00jwFUzGCf9q2515LZGSSXQxfAoZLuvKWMnXYFc=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			maSJNPUaXIG2dnrNaShbrdCdxFWO+jqVSx2kqkMsfGc=
+			+27/b7RRvNW4zIDoYrd7KPcTWUYorA9TQw8tWbU9xoY=
 			</data>
 		</dict>
 	</dict>
