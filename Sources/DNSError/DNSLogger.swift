@@ -17,7 +17,8 @@ public class DNSLogger {
     public var dnsLog = SwiftyBeaver.self
 
     required init() {
-        _ = self.addConsoleDestination()
+        @discardableResult
+self.addConsoleDestination()
         // SwiftyBeaver Initialization
         // add log destinations. at least one is needed!
         //let console = ConsoleDestination()  // log to Xcode Console
@@ -41,6 +42,7 @@ public class DNSLogger {
         //dnsLog.addDestination(cloud)
     }
 
+    @discardableResult
     public func addCloudDestination(appID: String,
                                     appSecret: String,
                                     encryptionKey: String) -> Bool {
@@ -59,6 +61,7 @@ public class DNSLogger {
 
         return dnsLog.addDestination(cloudDestination)
     }
+    @discardableResult
     public func addConsoleDestination() -> Bool {
         let console = ConsoleDestination()  // log to Xcode Console
         console.format = "$DHH:mm:ss.SSS$d $N.$F:$l [$T] $L $M"
