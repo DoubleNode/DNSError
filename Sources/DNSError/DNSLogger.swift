@@ -17,8 +17,7 @@ public class DNSLogger {
     public var dnsLog = SwiftyBeaver.self
 
     required init() {
-        @discardableResult
-self.addConsoleDestination()
+        self.addConsoleDestination()
         // SwiftyBeaver Initialization
         // add log destinations. at least one is needed!
         //let console = ConsoleDestination()  // log to Xcode Console
