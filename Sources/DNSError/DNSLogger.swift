@@ -83,6 +83,7 @@ public class DNSLogger {
         return SwiftyBeaver.destinations.first { ($0 as? ConsoleDestination) != nil } as? ConsoleDestination
     }
 
+    @discardableResult
     public func removeCloudDestination() -> Bool {
         guard let cloudDestination = self.cloudDestination() else {
             return false
