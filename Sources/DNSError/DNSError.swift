@@ -9,6 +9,16 @@
 import Foundation
 
 public protocol DNSError: LocalizedError {
-    var errorString: String { get }
-    var nsError: NSError! { get }
 }
+
+//public class DNSError: LocalizedError {
+//    public var errorString: String { _errorString() }
+//    public var nsError: NSError! { _nsError() }
+//
+//    open func _errorString() -> String {
+//        return ""
+//    }
+//    open func _nsError() -> NSError! {
+//        return nil
+//    }
+//}
