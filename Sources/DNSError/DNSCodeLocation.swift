@@ -33,6 +33,15 @@ open class CodeLocation {
     }
     
     public required init(_ object: Any,
+                         _ file: StaticString = #file,
+                         _ line: UInt = #line,
+                         _ function: StaticString = #function) {
+        domain = Self.domainPreface + "\(type(of: object))"
+        self.file = Self.shortenErrorPath("\(file)")
+        self.line = Int(line)
+        self.method = "\(function)"
+    }
+    public required init(_ object: Any,
                          _ rawData: String) {
         let data = rawData.components(separatedBy: ",")
         domain = Self.domainPreface + "\(type(of: object))"
@@ -40,7 +49,8 @@ open class CodeLocation {
         line = (data.count > 1) ? (Int(data[1]) ?? 0) : 0
         method = (data.count > 2) ? data[2] : ""
     }
-    
+
+
     public class func addFilenamePathRoot(_ pathRoot: String) {
         Self.filenamePathRoots.append(pathRoot)
     }
