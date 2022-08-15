@@ -36,7 +36,7 @@ open class CodeLocation {
                          _ file: StaticString = #file,
                          _ line: UInt = #line,
                          _ function: StaticString = #function) {
-        domain = Self.domainPreface + "\(type(of: object))"
+        domain = Self.domainPreface + Self.shortenErrorObject(object)
         self.file = Self.shortenErrorPath("\(file)")
         self.line = Int(line)
         self.method = "\(function)"
@@ -44,7 +44,7 @@ open class CodeLocation {
     public required init(_ object: Any,
                          _ rawData: String) {
         let data = rawData.components(separatedBy: ",")
-        domain = Self.domainPreface + "\(type(of: object))"
+        domain = Self.domainPreface + Self.shortenErrorObject(object)
         file = !data.isEmpty ? Self.shortenErrorPath(data[0]) : "<UnknownFile>"
         line = (data.count > 1) ? (Int(data[1]) ?? 0) : 0
         method = (data.count > 2) ? data[2] : ""
@@ -53,6 +53,13 @@ open class CodeLocation {
 
     public class func addFilenamePathRoot(_ pathRoot: String) {
         Self.filenamePathRoots.append(pathRoot)
+    }
+    public class func shortenErrorObject(_ object: Any) -> String {
+        var retval = "\(type(of: object))"
+        retval = retval
+            .replacingOccurrences(of: "Optional<", with: "")
+            .replacingOccurrences(of: ">", with: "")
+        return retval
     }
     public class func shortenErrorPath(_ filename: String) -> String {
         var retval = filename
