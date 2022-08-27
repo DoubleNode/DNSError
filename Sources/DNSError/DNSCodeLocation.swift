@@ -21,7 +21,8 @@ open class CodeLocation {
     public var file: String
     public var line: Int
     public var method: String
-    public var failureReason: String { "\(domain):\(file):\(line):\(method)" }
+    public var asString: String { "\(domain):\(file):\(line):\(method)" }
+    public var failureReason: String { self.asString }
     public var userInfo: [String: Any] {
         [
             "DNSTimeStamp": self.timeStamp,
@@ -67,5 +68,9 @@ open class CodeLocation {
             retval = retval.replacingOccurrences(of: $0, with: "~")
         }
         return retval
+    }
+    
+    public static func + (left: String, right: CodeLocation) -> String {
+        return "\(left)\(right.failureReason)"
     }
 }
