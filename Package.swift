@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 //
 //  Package.swift
 //  DoubleNode Swift Framework (DNSFramework) - DNSCoreThreading
@@ -12,10 +12,10 @@ import PackageDescription
 let package = Package(
     name: "DNSError",
     platforms: [
-        .iOS(.v13),
-        .tvOS(.v13),
+        .iOS(.v15),
+        .tvOS(.v15),
         .macOS(.v10_15),
-        .watchOS(.v6),
+        .watchOS(.v9),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
