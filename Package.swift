@@ -4,7 +4,7 @@
 //  DoubleNode Swift Framework (DNSFramework) - DNSCoreThreading
 //
 //  Created by Darren Ehlers.
-//  Copyright © 2020 - 2016 DoubleNode.com. All rights reserved.
+//  Copyright © 2023 - 2016 DoubleNode.com. All rights reserved.
 //
 
 import PackageDescription
@@ -12,9 +12,9 @@ import PackageDescription
 let package = Package(
     name: "DNSError",
     platforms: [
-        .iOS(.v15),
-        .tvOS(.v15),
-        .macOS(.v10_15),
+        .iOS(.v16),
+        .tvOS(.v16),
+        .macOS(.v13),
         .watchOS(.v9),
     ],
     products: [
@@ -26,7 +26,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.9.6"),
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "2.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
