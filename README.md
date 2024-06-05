@@ -34,13 +34,13 @@ Once you have your Swift package set up, adding Alamofire as a dependency is as 
 
 ```swift
 dependencies: [
-.package(url: "https://github.com/DoubleNode/DNSError.git", from: "1.11.0")
+.package(url: "https://github.com/DoubleNode/DNSError.git", from: "1.11.1")
 ]
 ```
 
 ## Dependencies
 
--   SwiftyBeaver v2.0.0+
+-   SwiftyBeaver v2.1.1+
 
 ## Credits
 
