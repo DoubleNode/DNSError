@@ -8,17 +8,6 @@
 
 import Foundation
 
-public protocol DNSError: LocalizedError {
+// Make DNSError Sendable for Swift 6 concurrency
+public protocol DNSError: LocalizedError, Sendable {
 }
-
-//public class DNSError: LocalizedError {
-//    public var errorString: String { _errorString() }
-//    public var nsError: NSError! { _nsError() }
-//
-//    open func _errorString() -> String {
-//        return ""
-//    }
-//    open func _nsError() -> NSError! {
-//        return nil
-//    }
-//}

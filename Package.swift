@@ -1,7 +1,7 @@
-// swift-tools-version:5.7
+// swift-tools-version: 6.0
 //
 //  Package.swift
-//  DoubleNode Swift Framework (DNSFramework) - DNSCoreThreading
+//  DoubleNode Swift Framework (DNSFramework) - DNSError
 //
 //  Created by Darren Ehlers.
 //  Copyright © 2023 - 2016 DoubleNode.com. All rights reserved.
@@ -12,10 +12,11 @@ import PackageDescription
 let package = Package(
     name: "DNSError",
     platforms: [
-        .iOS(.v16),
-        .tvOS(.v16),
-        .macOS(.v13),
-        .watchOS(.v9),
+        .iOS(.v17),
+        .tvOS(.v18),
+        .macCatalyst(.v18),
+        .macOS(.v15),
+        .watchOS(.v11),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -33,9 +34,30 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DNSError",
-            dependencies: ["SwiftyBeaver"]),
+            dependencies: ["SwiftyBeaver"],
+            swiftSettings: [
+                .enableUpcomingFeature("BareSlashRegexLiterals"),
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableUpcomingFeature("ForwardTrailingClosures"),
+                .enableUpcomingFeature("ImportObjcForwardDeclarations"),
+                .enableUpcomingFeature("DisableOutwardActorInference"),
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("StrictConcurrency"),
+                .enableUpcomingFeature("GlobalConcurrency")
+            ]),
         .testTarget(
             name: "DNSErrorTests",
-            dependencies: ["DNSError"]),
-    ]
+            dependencies: ["DNSError"],
+            swiftSettings: [
+                .enableUpcomingFeature("BareSlashRegexLiterals"),
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableUpcomingFeature("ForwardTrailingClosures"),
+                .enableUpcomingFeature("ImportObjcForwardDeclarations"),
+                .enableUpcomingFeature("DisableOutwardActorInference"),
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("StrictConcurrency"),
+                .enableUpcomingFeature("GlobalConcurrency")
+            ]),
+    ],
+    swiftLanguageModes: [.v6]
 )

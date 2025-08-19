@@ -9,57 +9,23 @@
 import Foundation
 import SwiftyBeaver
 
+// Global logger instance - marked as MainActor for thread safety
+@MainActor
 public let dnsLog = DNSLogger.shared.dnsLog
 
-public class DNSLogger {
-    static public let shared = DNSLogger()
+// DNSLogger needs to be Sendable and thread-safe for Swift 6
+@MainActor
+public final class DNSLogger: Sendable {
+    public static let shared = DNSLogger()
 
-    public var dnsLog = SwiftyBeaver.self
+    public let dnsLog = SwiftyBeaver.self
 
-    required init() {
+    private var consoleDestinationRef: ConsoleDestination?
+
+    private init() {
         self.addConsoleDestination()
-        // SwiftyBeaver Initialization
-        // add log destinations. at least one is needed!
-        //let console = ConsoleDestination()  // log to Xcode Console
-        //let file = FileDestination()  // log to default swiftybeaver.log file
-        //let cloud = SBPlatformDestination(appID: "foo", appSecret: "bar", encryptionKey: "123") // to cloud
-
-        // use custom format and set console output to short time, log level & message
-        //console.format = "$DHH:mm:ss.SSS$d $N.$F:$l [$T] $L $M"
-        //console.asynchronously = false
-        //console.levelString.verbose = "💙"
-        //console.levelString.debug = "💚"
-        //console.levelString.info = "🧡🧡"
-        //console.levelString.warning = "💛💛"
-        //console.levelString.error = "❤️❤️❤️❤️"
-        //console.minLevel = .verbose
-        // or use this for JSON output: console.format = "$J"
-
-        // add the destinations to SwiftyBeaver
-        //dnsLog.addDestination(console)
-        //dnsLog.addDestination(file)
-        //dnsLog.addDestination(cloud)
     }
 
-//    @discardableResult
-//    public func addCloudDestination(appID: String,
-//                                    appSecret: String,
-//                                    encryptionKey: String) -> Bool {
-//        let cloudDestination = SBPlatformDestination(appID: appID,
-//                                                     appSecret: appSecret,
-//                                                     encryptionKey: encryptionKey)
-//        cloudDestination.format = "$DHH:mm:ss.SSS$d $N.$F:$l [$T] $L $M"
-//        cloudDestination.asynchronously = false
-//        cloudDestination.levelString.verbose = "💙"
-//        cloudDestination.levelString.debug = "💚"
-//        cloudDestination.levelString.info = "🧡🧡"
-//        cloudDestination.levelString.warning = "💛💛"
-//        cloudDestination.levelString.error = "❤️❤️❤️❤️"
-//        cloudDestination.minLevel = .verbose
-//        // or use this for JSON output: console.format = "$J"
-//
-//        return dnsLog.addDestination(cloudDestination)
-//    }
     @discardableResult
     public func addConsoleDestination() -> Bool {
         let console = ConsoleDestination()  // log to Xcode Console
@@ -71,23 +37,13 @@ public class DNSLogger {
         console.levelString.warning = "💛💛"
         console.levelString.error = "❤️❤️❤️❤️"
         console.minLevel = .verbose
-        // or use this for JSON output: console.format = "$J"
 
+        // Store reference to avoid accessing SwiftyBeaver.destinations later
+        self.consoleDestinationRef = console
         return dnsLog.addDestination(console)
     }
 
-//    public func cloudDestination() -> SBPlatformDestination? {
-//        return SwiftyBeaver.destinations.first { ($0 as? SBPlatformDestination) != nil } as? SBPlatformDestination
-//    }
     public func consoleDestination() -> ConsoleDestination? {
-        return SwiftyBeaver.destinations.first { ($0 as? ConsoleDestination) != nil } as? ConsoleDestination
+        return consoleDestinationRef
     }
-
-//    @discardableResult
-//    public func removeCloudDestination() -> Bool {
-//        guard let cloudDestination = self.cloudDestination() else {
-//            return false
-//        }
-//        return dnsLog.removeDestination(cloudDestination)
-//    }
 }
