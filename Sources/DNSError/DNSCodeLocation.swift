@@ -59,7 +59,10 @@ open class CodeLocation: @unchecked Sendable {
     
     public required init(_ object: Any,
                          _ rawData: String) {
-        let data = rawData.components(separatedBy: ",")
+        var data = rawData.components(separatedBy: ",")
+        if data.count == 1 && data[0].isEmpty {
+            data = []
+        }
         self.timeStamp = Date()
         self.domain = Self.domainPreface + Self.shortenErrorObject(object)
         self.file = !data.isEmpty ? Self.shortenErrorPath(data[0]) : "<UnknownFile>"
@@ -84,12 +87,18 @@ open class CodeLocation: @unchecked Sendable {
     public class func shortenErrorPath(_ filename: String) -> String {
         var retval = filename
         let roots = _filenamePathRoots.withLock { $0 }
-        roots.forEach {
-            retval = retval.replacingOccurrences(of: $0, with: "~")
+        
+        // Find the longest matching root
+        let matchingRoot = roots
+            .filter { filename.hasPrefix($0) }
+            .max(by: { $0.count < $1.count })
+        
+        if let root = matchingRoot {
+            retval = retval.replacingOccurrences(of: root, with: "~")
         }
+        
         return retval
     }
-    
     public static func + (left: String, right: CodeLocation) -> String {
         return "\(left)\(right.failureReason)"
     }
