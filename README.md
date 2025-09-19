@@ -20,7 +20,7 @@ DNSError is a collection of Error handling classes used for the DNSFramework
 
 ## Requirements
 
--   iOS 16.0+ / macOS 13.3+ / tvOS 16.4+ / watchOS 9.4+
+-   iOS 16.0+ / macCatalyts 16.0+ / macOS 13.3+ / tvOS 16.4+ / watchOS 9.4+
 -   Xcode 14.3.1+
 -   Swift 5.8+
 
@@ -34,13 +34,13 @@ Once you have your Swift package set up, adding Alamofire as a dependency is as 
 
 ```swift
 dependencies: [
-.package(url: "https://github.com/DoubleNode/DNSError.git", from: "1.11.1")
+.package(url: "https://github.com/DoubleNode/DNSError.git", from: "1.12.0")
 ]
 ```
 
 ## Dependencies
 
--   SwiftyBeaver v2.1.1+
+-   SwiftyBeaver v2.1.2+
 
 ## Credits
 
@@ -48,4 +48,4 @@ DNSError and the DNSFramework are owned and maintained by Darren Ehlers and [Dou
 
 ## License
 
-DNSError and the DNSFramework are Copyright © 2023 - 2016 Darren Ehlers and DoubleNode, LLC. All rights reserved.
+DNSError and the DNSFramework are Copyright © 2025 - 2016 Darren Ehlers and DoubleNode, LLC. All rights reserved.

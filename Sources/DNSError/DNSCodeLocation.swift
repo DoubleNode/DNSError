@@ -3,7 +3,7 @@
 //  DoubleNode Swift Framework (DNSFramework) - DNSError
 //
 //  Created by Darren Ehlers.
-//  Copyright © 2020 - 2016 DoubleNode.com. All rights reserved.
+//  Copyright © 2025 - 2016 DoubleNode.com. All rights reserved.
 //
 
 import Foundation
@@ -12,9 +12,16 @@ open class DNSCodeLocation: CodeLocation {
     override open class var domainPreface: String { "com.doublenode." }
 }
 open class CodeLocation {
-    static var filenamePathRoots: [String] = []
+    private static var _filenamePathRoots: [String] = []
+    private static let filenamePathRootsQueue = DispatchQueue(label: "com.doublenode.codelocation.pathrootsqueue", attributes: .concurrent)
 
     open class var domainPreface: String { "" }
+    
+    static var filenamePathRoots: [String] {
+        return filenamePathRootsQueue.sync {
+            return _filenamePathRoots
+        }
+    }
 
     public var timeStamp: Date = Date()
     public var domain: String
@@ -53,7 +60,15 @@ open class CodeLocation {
 
 
     public class func addFilenamePathRoot(_ pathRoot: String) {
-        Self.filenamePathRoots.append(pathRoot)
+        filenamePathRootsQueue.sync(flags: .barrier) {
+            _filenamePathRoots.append(pathRoot)
+        }
+    }
+    
+    internal class func removeAllFilenamePathRoots() {
+        filenamePathRootsQueue.sync(flags: .barrier) {
+            _filenamePathRoots.removeAll()
+        }
     }
     public class func shortenErrorObject(_ object: Any) -> String {
         var retval = "\(type(of: object))"
@@ -64,7 +79,10 @@ open class CodeLocation {
     }
     public class func shortenErrorPath(_ filename: String) -> String {
         var retval = filename
-        Self.filenamePathRoots.forEach {
+        let pathRoots = filenamePathRootsQueue.sync {
+            return _filenamePathRoots
+        }
+        pathRoots.forEach {
             retval = retval.replacingOccurrences(of: $0, with: "~")
         }
         return retval

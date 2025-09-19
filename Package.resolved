@@ -3,10 +3,10 @@
     {
       "identity" : "swiftybeaver",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "location" : "https://github.com/DoubleNodeOpen/SwiftyBeaver.git",
       "state" : {
-        "revision" : "8cba041db09596183331d123f337d0eb2e6e8e91",
-        "version" : "2.1.1"
+        "revision" : "077d7ba1389768c32d6e1c190af6bfb93fb20bc2",
+        "version" : "2.1.2"
       }
     }
   ],
